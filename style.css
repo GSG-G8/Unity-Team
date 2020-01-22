@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth ;
 }
 
 /* Start header */
@@ -18,7 +19,7 @@
 
 .for-color {
   position: absolute;
-  background-color: rgba(0, 195, 255, 0.2);
+  background-color: rgba(0, 195, 255, 0.13);
   width: 100%;
   height: 100%;
   left: 0;
@@ -29,11 +30,11 @@
   width: 100%;
   display: flex;
   padding: 25px;
-  height: 90px;
+  height: 80px;
   position: fixed;
   z-index: 6;
   padding-left: 12%;
-  background-color: #214854bf;
+  background-color: rgba(0, 0, 0, 0.842);
 }
 .page-header .fixed-header .logo {
   font-size: 20px;
@@ -57,6 +58,11 @@
   font-size: 20px;
   color: white;
   margin-left: 143px;
+}
+.page-header .fixed-header nav ul li a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1300px) and (min-width: 600px) {
@@ -166,7 +172,8 @@
 
 /* Start About Us*/
 .about-us{
-    padding: 10px;
+    padding: 40px;
+    padding-top: 100px;
 }
 .about-us .about-contant{
     display: flex;
@@ -210,11 +217,13 @@
 }
 button {
   width: 160px;
-  height: 30px;
-  background-color: #39a2d5;
-  border: 1px solid;
+  height: 50px;
+  background-color: rgb(26,112,155);
+  border: 1px solid rgb(26,112,155);
+  border-radius: 30px;;
   font-weight: bold;
   margin: 30px 0px;
+  color: white;
 }
 @media screen and (max-width: 600px) {
   button {
@@ -226,6 +235,15 @@ button {
 /* Start team member */
 .team-member{
     padding: 10px;
+    background-color: rgb(7, 39, 51)
+    ;
+    padding-top: 90px
+}
+.team-member h2{
+    font-size: 30px;
+    text-align:center;
+    padding: 60px;
+    color: white;
 }
 .team-content{
     display: flex;
@@ -263,7 +281,7 @@ button {
 }
 
 .card .front header {
-    background-color: #444;
+    background-color: rgb(149, 157, 160);
     width: 100%;
     height: 80px;
     border-radius: 10px 10px 0 0;
@@ -292,7 +310,7 @@ button {
 .card .front span {
     display: inline-block;
     margin-top: 5px;
-    color: blue;
+    color: rgb(26,112,155);
     font-weight: bold;
 }
 
@@ -322,13 +340,14 @@ button {
 
 /* Start the footer */
 footer {
-  padding: 10px;
-  background-color: #DDD;
+
+  padding-top: 50px;
+  background-color:white;
 }
 footer .footer-content {
   display: flex;
   justify-content: space-between;
-  background-color: #ddd;
+  background-color: white;
   flex-wrap: wrap;
 }
 
@@ -373,7 +392,7 @@ footer .team-accounts a {
   color: black;
 }
 footer .team-accounts a:hover {
-  color: rgb(69, 187, 223);
+  color: rgb(26,112,155);
   cursor: pointer;
 }
 footer .contact {
@@ -398,7 +417,7 @@ footer .contact form textarea {
   display: block;
   padding: 10px;
   margin-top: 5px;
-  width: 60%;
+  width: 75%;
 }
 @media screen and (max-width: 600px) {
     footer .contact form textarea {
@@ -419,7 +438,7 @@ footer .contact form input {
 }
 .copyright {
   text-align: center;
-  background-color: rgb(26, 112, 155);
+  background-color: rgb(7, 39, 51);
   color: white;
   padding: 15px;
   font-weight: bold;
