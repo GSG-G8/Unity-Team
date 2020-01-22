@@ -41,7 +41,7 @@
 * User stories:
         
         1- As a client looking to hire a team of developers
-        I want to visit your site and immediately see a headline about your team
+        I want to visit your site and immediately see a headline about your team.
 
         So that I get a concise description of what you have to offer me.
 
