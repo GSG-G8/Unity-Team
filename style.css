@@ -132,3 +132,109 @@
   }
 
   
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: #DDD; */
+}
+
+/* Start About Us*/
+.about-us .about-contant{
+    display: flex;
+    justify-content: space-between;
+}
+.about-us{
+    padding: 30px;
+}
+.about-us .about-contant .about-img{
+    width: 36%;
+}
+.about-us .about-contant .details-about{
+    margin-top: 20px;
+    width: 60%;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+}
+.about-us h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+button{
+    width: 160px;
+    height: 30px;
+    background-color: #39A2D5;
+    border: 1px solid;
+    font-weight: bold;
+    margin: 30px 0px;
+
+}
+/* End About Us*/
+
+/* Start the footer */
+footer{
+    padding: 30px;
+}
+footer .footer-content{
+    display: flex;
+    justify-content: space-between;
+    background-color: #DDD;
+}
+
+footer .team-accounts{
+    width: 36%;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+footer .team-accounts h2{
+    margin-bottom: 30px;
+}
+
+footer .team-accounts i{
+    margin: 10px;
+    line-height: 1.8;
+    width: 18px;
+}
+footer .team-accounts a{
+    /* display: block; */
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+footer .team-accounts a:hover{
+    color: rgb(69, 187, 223);
+    cursor: pointer;
+}
+footer .contact{
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+footer .contact h2{
+    margin-bottom: 30px;
+}
+
+footer .contact form textarea{
+    display: block;
+    padding: 10px;
+    margin-top: 5px;
+    width: 90%;
+
+}
+footer .contact form input{
+    margin-bottom: 15px;
+    margin-top: 5px;
+    width: 200px;
+    height: 25px;
+    padding-left: 10px;
+}
+.copyright{
+    text-align: center;
+    background-color:  rgb(26, 112, 155);
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    margin: 0 auto;
+}
