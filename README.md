@@ -80,3 +80,7 @@
         I would like to easily understand how to navigate the site after my screen reader reads me the content of the site
 
         so I can understand the information available.
+        
+        
+        Visit our portfolio here 
+        https://gsg-g8.github.io/Unity-Team/
