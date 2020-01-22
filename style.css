@@ -42,6 +42,82 @@ button{
 
 }
 /* End About Us*/
+/* Start team member */
+.card {
+    width: 300px;
+    height: 320px;
+    margin: 50px auto;
+    position: relative;
+    transform-style: preserve-3d; /*necessary to reverse the card */
+    transition: all 1s ease-in-out;
+}
+
+.card:hover {
+    transform: rotateY(180deg); /* to return the text to it's correct display */
+}
+.card > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: #EEE;
+    color: #777;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.card .front {
+    z-index: 2; /* to make the front above the back */
+  /*  backface-visibility: hidden; to be sure the back of front or back divs will not appear */
+}
+
+.card .front header {
+    background-color: #444;
+    width: 100%;
+    height: 80px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 55px;
+}
+
+.card .front img {
+    width: 80px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: 25px;
+}
+
+.card .front h3 {
+    margin-bottom: 5px;
+}
+
+.card .front p {
+    margin: 0 auto;
+    width: 90%;
+    line-height: 1.7;
+}
+
+.card .front span {
+    display: inline-block;
+    margin-top: 5px;
+    color: blue;
+    font-weight: bold;
+}
+
+.card .back {
+    z-index: 1;
+    transform: rotateY(180deg); /* to return the text to it's correct display */
+   /* backface-visibility: hidden; to be sure the back of front or back divs will not appear */
+}
+
+.card .back ul {
+    padding: 0;
+    list-style: none;
+    line-height: 2;
+}
+/* End team member */
 
 /* Start the footer */
 footer{
