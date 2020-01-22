@@ -2,7 +2,137 @@
     font-family: 'Raleway', Times, serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+.page-header {
+    background-image: url('images/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 13% 0 13%;
+    height: 100vh;
+    position: relative;
+}
+
+.for-color {
+    position: absolute;
+    background-color: rgba(0, 195, 255, 0.2);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.page-header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 5;
+    color: white;
+    height: 40px;
+    width: 40%;
+}
+
+
+.page-header nav {
+    z-index: 5;
+    height: 40px;
+    width: 60%;
+}
+
+.page-header nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 120px;
+    font-size: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 600px)  {
+    .page-header nav ul li{ margin-left: 30px;}
+    
+}
+
+
+.page-header nav ul li:hover{
+    border-bottom: 4px solid rgb(69, 187, 223);
+    cursor: pointer;
+}
+
+.page-header .header-content{
+    margin: 0 auto;
+    z-index: 4;
+    text-align: center;
+    letter-spacing: 10px;
+    padding-right: 89px;
+
+}
+
+.page-header .header-content h1 {
+    color: white;
+    margin-bottom: 15px;
+    letter-spacing: 10px;
+
+}
+
+.page-header .header-content p {
+    color: white;
+    font-weight: bold;
+}
+
+.page-header .header-content button {
+    margin-top: 25px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 140px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    outline:none;
+    cursor: pointer;
+}
+
+.page-header .header-content button:hover {
+    color:rgb(69, 187, 223) ;
+}
+
+.header-slogan {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end);
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  .header-main {
+    opacity: 0;
+  }
+  .header-main{
+    animation-name: testanim;
+    
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes testanim {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+
 
 .container{
     width: 80%;
